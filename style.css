@@ -1,0 +1,52 @@
+/*CSS RESET*/
+*
+{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+.container{
+   max-width:70%;               /*how much area takes the form*/
+   background-color:lightcyan;
+   padding :34px;
+   margin:auto;
+   opacity:0.6;
+}
+
+.container h3,p
+{
+text-align:center;
+}
+
+h3,p
+{
+color:darkblue;
+}
+
+
+/*input {
+    width:80%;
+}*/
+
+.btn{
+    font-size: 16px;
+    padding: 5px 8px;
+    background: purple;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+label
+{
+color:darkblue;
+}
+
+.bg
+    {
+    width:100%;
+    position:absolute;
+    z-index: -1;
+    }
