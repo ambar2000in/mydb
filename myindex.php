@@ -9,6 +9,8 @@ $password = "";
 $db ="mydb";*/
 
            
+ // PORT 3306 
+           
 $server = "bm2r5yopsfrjtyafew6x-mysql.services.clever-cloud.com:3306";
 $username = "ulmn8jagnfx4kcpx";
  $password="FqeR2bzSHuGSoRWizQKV";
