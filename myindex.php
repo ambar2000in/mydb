@@ -11,7 +11,8 @@ $db ="mydb";*/
            
 $server = "bm2r5yopsfrjtyafew6x-mysql.services.clever-cloud.com:3306";
 $username = "ulmn8jagnfx4kcpx";
-$password = "ulmn8jagnfx4kcpx";
+ $password="FqeR2bzSHuGSoRWizQKV";
+/*$password = "ulmn8jagnfx4kcpx";*/
  /*$password = "Ambar04021971@";*/
 $db ="bm2r5yopsfrjtyafew6x";
 
