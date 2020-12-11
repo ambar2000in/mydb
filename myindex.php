@@ -3,10 +3,16 @@
 
 if (isset($_POST['name']))
 {
-$server = "localhost";
+/*$server = "localhost";
 $username = "root";
 $password = "";
-$db ="mydb";
+$db ="mydb";*/
+
+$server = "bm2r5yopsfrjtyafew6x-mysql.services.clever-cloud.com";
+$username = "ulmn8jagnfx4kcpx";
+$password = "Ambar04021971@";
+$db ="bm2r5yopsfrjtyafew6x";
+
 
 $con = mysqli_connect($server, $username, $password, $db);
 
