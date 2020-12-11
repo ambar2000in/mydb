@@ -35,8 +35,11 @@ $email=$_POST['email'];
 /*$phone=$_POST['phone'];*/
 $mdesc=$_POST['mdesc'];
  
-$sql="INSERT INTO trip (sno, name, age, gender, email,  mdesc, dt)
-values ('$sno', '$name', '$age', '$gender', '$email', '$mdesc', current_timestamp());";
+/*$sql="INSERT INTO trip (sno, name, age, gender, email,  mdesc, dt)
+values ('$sno', '$name', '$age', '$gender', '$email', '$mdesc', current_timestamp());";*/
+ 
+ $sql="INSERT INTO trip (name, age, gender, email,  mdesc, dt)
+values ('$name', '$age', '$gender', '$email', '$mdesc', current_timestamp());";
 
 /*echo $sql;*/
 if ($con->query($sql) == true)
