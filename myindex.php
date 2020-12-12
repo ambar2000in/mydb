@@ -3,18 +3,18 @@
 
 if (isset($_POST['name']))
 {
-$server = "localhost";
+/*$server = "localhost";
 $username = "root";
 $password = "";
-$db ="mydb";
+$db ="mydb";*/
 
            
  // PORT 3306 
            
-/*$server = "bm2r5yopsfrjtyafew6x-mysql.services.clever-cloud.com:3306";
+$server = "bm2r5yopsfrjtyafew6x-mysql.services.clever-cloud.com:3306";
 $username = "ulmn8jagnfx4kcpx";
  $password="FqeR2bzSHuGSoRWizQKV";
-$db ="bm2r5yopsfrjtyafew6x";*/
+$db ="bm2r5yopsfrjtyafew6x";
 
 $con = mysqli_connect($server, $username, $password, $db);
 
