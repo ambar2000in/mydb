@@ -3,31 +3,31 @@
 
 if (isset($_POST['name']))
 {
-/*$server = "localhost";
+$server = "localhost";
 $username = "root";
 $password = "";
-$db ="mydb";*/
+$db ="mydb";
 
            
  // PORT 3306 
            
-$server = "bm2r5yopsfrjtyafew6x-mysql.services.clever-cloud.com:3306";
+/*$server = "bm2r5yopsfrjtyafew6x-mysql.services.clever-cloud.com:3306";
 $username = "ulmn8jagnfx4kcpx";
  $password="FqeR2bzSHuGSoRWizQKV";
-/*$password = "ulmn8jagnfx4kcpx";*/
- /*$password = "Ambar04021971@";*/
-$db ="bm2r5yopsfrjtyafew6x";
-
+$db ="bm2r5yopsfrjtyafew6x";*/
 
 $con = mysqli_connect($server, $username, $password, $db);
-
 
 if(!$con)
 {
     die("Connection to this database failed due to ". mysqli_connect_error());
 }    
  
-echo "Successful connection to the database"  ;
+
+echo '<script>alert("Successfully connection");
+ window.location = "index.html";
+ </script>'; 
+
 
 $sno=$_POST['sno'];
 $name=$_POST['name'];
@@ -48,16 +48,23 @@ values ('$name', '$age', '$gender', '$email', '$mdesc', current_timestamp());";
 /*echo $sql;*/
 if ($con->query($sql) == true)
 {
-    echo "Successfully Inserted";
+    
+    echo '<script>alert("Successfully Inserted")</script>'; 
+         
     $insert=true;
 }
  
 else
 {
-echo "ERROR: $sql <br> $con->error";
+
+    echo "ERROR: $sql <br> $con->error";
+    
 }
 
 $con->close();
 
 }    /*IF ISSET CLOSE HERE */ 
+
+
+header("location:index.html");   //REDIRECT TO CALLING FILE
 ?>
