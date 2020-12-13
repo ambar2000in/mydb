@@ -16,9 +16,8 @@
       <h3> Welcome to Travel Form </h3>
       <p> Enter you details and submit this form to confirm your participation</p><br>
         
-<form action ="myindex.php" method="post">
+<form id="myForm" action ="myindex.php" method="POST">
 
-      
       <label>Sr. No.</label>               
       <input type ="text"  name="sno"   id="sno"   size="10"  maxlength="8" placeholder="Enter Sr.  No. :"><br><br>
 
@@ -33,20 +32,17 @@
       
       <label>EMail &nbsp &nbsp</label>   
       <input type ="email" name="email"  id="email"   size="50"  maxlength="45" placeholder="Enter Your Email :"><br><br>
-      
-      <!--<label>P h o n e</label> 
-      <input type ="phone" name="phone"  id="phone"   size="15"  maxlength="15" placeholder="Enter Your Phone :"><br><br> -->
-      
+     
       <label>Description</label><br>
       <label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
       <textarea name="mdesc" id="mdesc" cols="30" rows="10" placeholder="Enter any other Information here"></textarea><br>
-      <button  class="btn">Submit</button>
-      <button class="btn">Reset</button>
+
+      <input type="submit" class="btn" value="Submit">
+      <input type="reset"  class="btn" value="Reset">
 </form>
 
 </div>
 
-<!--<script src="index.js"></script>-->
 
 </body>
 </html>
