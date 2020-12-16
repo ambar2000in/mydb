@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY PHP TUTORIALS</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 
 </head>
 <body>
@@ -17,32 +18,35 @@
       <p> Enter you details and submit this form to confirm your participation</p><br>
         
 <form id="myForm" action ="myindex.php" method="POST">
-
-      <label>Sr. No.</label>               
-      <input type ="text"  name="sno"   id="sno"   size="10"  maxlength="8" placeholder="Enter Sr.  No. :"><br><br>
+      
+      <label>Sr. No.</label> 
+      <input type ="text"  name="sno"   id="sno"   size="10"    maxlength="8"  onkeydown="return myFunction1(event)"  placeholder="Enter Sr.  No. :"><br><br>
 
       <label>N  a m e</label>               
-      <input type ="text"  name="name"   id="name"   size="60"  maxlength="50" placeholder="Enter Your Name :"><br><br>
+      <input type ="text"  name="name"   id="name"   size="60"  maxlength="50"  onkeydown="return myFunction2(event)" placeholder="Enter Your Name :"><br><br>
       
       <label>A  g  e  &nbsp  &nbsp</label>   
-      <input type ="text"  name="age"    id="age"    size="10"  maxlength="3" placeholder="Enter Your Age  :"><br><br>
+      <input type ="text"  name="age"    id="age"    size="10"  maxlength="3"   onkeydown="return myFunction3(event)" placeholder="Enter Your Age  :"><br><br>
       
       <label>Gender &nbsp </label>              
-      <input type ="text"  name="gender" id="gender" size="15"  maxlength="6" placeholder="Enter Your Gender :"><br><br>
+      <input type ="text"  name="gender" id="gender" size="15"  maxlength="6"  onkeydown="return myFunction4(event)" placeholder="Enter Your Gender :"><br><br>
       
       <label>EMail &nbsp &nbsp</label>   
-      <input type ="email" name="email"  id="email"   size="50"  maxlength="45" placeholder="Enter Your Email :"><br><br>
-     
+      <input type ="email" name="email"  id="email"   size="50" maxlength="45"  onkeydown="return myFunction5(event)" placeholder="Enter Your Email :"><br><br>
+
+      
       <label>Description</label><br>
       <label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
-      <textarea name="mdesc" id="mdesc" cols="30" rows="10" placeholder="Enter any other Information here"></textarea><br>
+      <textarea name="mdesc" id="mdesc" cols="30" rows="10" onkeydown="return myFunction6(event)" placeholder="Enter any other Information here"></textarea><br>
 
-      <input type="submit" class="btn" value="Submit">
+      <input id="sub" type="submit" class="btn" value="Submit">
       <input type="reset"  class="btn" value="Reset">
+
 </form>
 
 </div>
 
+<script>onload=document.getElementById("sno").focus();</script>
 
 </body>
 </html>

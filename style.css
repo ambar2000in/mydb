@@ -3,6 +3,7 @@
 {
 margin:0;
 padding:0;
+cursor:none;
 box-sizing:border-box;
 }
 
@@ -57,5 +58,3 @@ color:darkblue;
     position:absolute;
     z-index: -1;
     }
-
-    
