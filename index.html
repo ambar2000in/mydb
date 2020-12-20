@@ -3,41 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY PHP TUTORIALS</title>
+    <title>OUR FAMILY</title>
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
 
-</head>
+<script>
+  function myAutofunction();
+</script>
+  </head>
 <body>
       
 <img src="meragaon.jpg" class ="bg" alt="A Picture Background">
 
 <div class="container">
       
-      <h3> Welcome to Travel Form </h3>
-      <p> Enter you details and submit this form to confirm your participation</p><br>
-        
+      <h3> Welcome to community form </h3>
+      <p> Enter your details and submit this form</p><br>
+
 <form id="myForm" action ="myindex.php" method="POST">
       
-      <label>Sr. No.</label> 
-      <input type ="text"  name="sno"   id="sno"   size="10"    maxlength="8"  onkeydown="return myFunction1(event)"  placeholder="Enter Sr.  No. :"><br><br>
-
-      <label>N  a m e</label>               
-      <input type ="text"  name="name"   id="name"   size="60"  maxlength="50"  onkeydown="return myFunction2(event)" placeholder="Enter Your Name :"><br><br>
+      <label>Name*</label>               
+      <input type ="text"  name="name"   id="name"   size="60"  required maxlength="50"  onkeydown="return myFunction1(event)" placeholder="Enter Your Name :"><br><br>
       
       <label>A  g  e  &nbsp  &nbsp</label>   
-      <input type ="text"  name="age"    id="age"    size="10"  maxlength="3"   onkeydown="return myFunction3(event)" placeholder="Enter Your Age  :"><br><br>
+      <input type ="text"  name="age"    id="age"    size="10"  maxlength="3"   onkeydown="return myFunction2(event)" placeholder="Enter Age  :"><br><br>
       
-      <label>Gender &nbsp </label>              
-      <input type ="text"  name="gender" id="gender" size="15"  maxlength="6"  onkeydown="return myFunction4(event)" placeholder="Enter Your Gender :"><br><br>
+      <label for="gender">Gender</label>
+      <select   id="gender"   onkeydown="return myFunction3(event)" name="gender">
+        <option id ="male"    size ="10" value="male">Female</option>
+        <option id="female"   size ="10"  value="female">Male</option>
+        <option id="other"    size ="10" value="other">Other</option>
+      </select>
+  <br>
       
-      <label>EMail &nbsp &nbsp</label>   
-      <input type ="email" name="email"  id="email"   size="50" maxlength="45"  onkeydown="return myFunction5(event)" placeholder="Enter Your Email :"><br><br>
+    <p>Your Marital Status:</p>
+    <input type="radio" id="marriedy" name="marriedyn" value="y" onkeydown="return myFunction4(event)">
+    <label for="marriedy">Married</label><br>
+    <input type="radio" id="marriedn" name="marriedyn" checked="true" value="n" onkeydown="return myFunction4(event)">
+    <label for="marriedn">Unmarried</label><br>
+  
+    <br>
+    
+      <label>EMail &nbsp</label>   
+      <input type ="email" name="email"  id="email"   size="50" maxlength="48"  onkeydown="return myFunction5(event)" placeholder="Enter Email Id. :"><br><br>
 
-      
+      <label>Phone  &nbsp</label>   
+      <input type ="text" name="phone"  id="phone"   size="15" maxlength="10"  onkeydown="return myFunction6(event)" placeholder="Enter Phone No. :"><br><br>
+
+
       <label>Description</label><br>
       <label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
-      <textarea name="mdesc" id="mdesc" cols="30" rows="10" onkeydown="return myFunction6(event)" placeholder="Enter any other Information here"></textarea><br>
+      <textarea name="mdesc" id="mdesc" cols="30" rows="10" resize="none" onkeydown="return myFunction7(event)" placeholder="Enter any other Information here"></textarea><br>
 
       <input id="sub" type="submit" class="btn" value="Submit">
       <input type="reset"  class="btn" value="Reset">
@@ -46,7 +62,7 @@
 
 </div>
 
-<script>onload=document.getElementById("sno").focus();</script>
+<script>onload=document.getElementById("name").focus();</script>
 
 </body>
 </html>

@@ -3,12 +3,12 @@
 
 if (isset($_POST['name']))
 {
-//$server = "localhost";
+// $server = "localhost";
 // $username = "root";
 // $password = "";
 // $db ="mydb";
 
-           
+            
    // PORT 3306 
            
    $username = "ulmn8jagnfx4kcpx";
@@ -26,21 +26,23 @@ if(!$con)
 }    
  
 
-echo ("Successfully connection");
+echo ("Successful connection");
 
 
 $sno=$_POST['sno'];
 $name=$_POST['name'];
-$gender=$_POST['gender'];
 $age=$_POST['age'];
+$gender=$_POST['gender'];
+$marriedyn=$_POST['marriedyn'];
+$phone=$_POST['phone'];
 $email=$_POST['email'];
-/*$phone=$_POST['phone'];*/
 $mdesc=$_POST['mdesc'];
+
  
 //Serial number Automatically Increaments
  
- $sql="INSERT INTO trip (name, age, gender, email,  mdesc, dt)
-values ('$name', '$age', '$gender', '$email', '$mdesc', current_timestamp());";
+ $sql="INSERT INTO trip (name, age, gender, married, phone, email,  mdesc, dt)
+values ('$name', '$age', '$gender', '$marriedyn', '$phone', '$email', '$mdesc', current_timestamp());";
 
 /*echo $sql;*/
 if ($con->query($sql) == true)
@@ -54,9 +56,7 @@ if ($con->query($sql) == true)
  
 else
 {
-
     echo "ERROR: $sql <br> $con->error";
-    
 }
 
 $con->close();
