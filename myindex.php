@@ -29,7 +29,7 @@ if(!$con)
 echo ("Successful connection");
 
 
-$sno=$_POST['sno'];
+// $sno=$_POST['sno'];
 $name=$_POST['name'];
 $age=$_POST['age'];
 $gender=$_POST['gender'];
@@ -64,6 +64,6 @@ $con->close();
 }    /*IF ISSET CLOSE HERE */ 
 
 
-header("location:index.html");   //REDIRECT TO CALLING FILE
+ header("location:index.html");   //REDIRECT TO CALLING FILE
 
 ?>
